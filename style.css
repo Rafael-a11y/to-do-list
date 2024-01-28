@@ -1,0 +1,171 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+  *,html,body
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  body
+  {
+    --bs-body-bg: #2C2C2C;
+    --bs-body-color: #FFF;
+    --bs-body-font-family: "Racing Sans One";
+    font-weight: 400;
+   
+  }
+
+  h1
+  {
+    color: var(--light, #FFF);
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 64px!important;
+    font-style: normal;
+    margin-bottom: 0!important;
+    display: inline-block;
+
+  }
+  .cabecalho
+  {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-bottom: 2px var(--bs-body-color) solid;
+    margin-bottom: 3rem;
+
+    @media screen and (max-width:768px)
+    {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  main
+  {
+    padding: 0 16rem 0 16rem;
+
+    @media screen and (max-width:768px)
+    {
+      padding: 0 8rem 0 8rem;
+    }
+
+    @media screen and (max-width:430px)
+    {
+      padding: 0 1rem 0 1rem;
+      
+    }
+  }
+
+  .section-input
+  {
+    border-bottom: 2px solid var(--bs-body-color);
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 4rem;
+  }
+
+  .new-task,.new-task *
+  {
+    border-radius: 30px;
+  }
+
+  .new-task
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    height: 3rem;
+    position: relative;
+    border: none;
+  }
+
+  .input-task
+  {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    z-index: 0;
+    background-color: #D9D9D9;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .input-task::placeholder
+  {
+    text-align: left;
+  }
+
+  .button-add-task
+  {
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: #2C2C2C;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    padding: 0.5rem;
+    height: 100%;
+  }
+
+  .task-list
+  {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .task-list-item
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+    background-color: black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 2rem;
+  }
+
+
+  .phrase-task
+  {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+.buttons-task
+{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  display: inline-block;
+  height: 100%;
+}
+.button-edit-task
+{
+  background: url("./assets/edit.png") #FFFFFF80;
+}
+
+.button-remove-task
+{
+  background: url("./assets/icon\ trash.svg") #FFFFFF80;
+}
+
+.button-remove-task, .button-edit-task
+{
+  border-radius: 10px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+}
+
+.text-area-edit
+{
+  width: 100%;
+}
+
