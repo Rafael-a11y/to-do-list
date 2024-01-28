@@ -29,7 +29,7 @@
     display: none;
   }
   
-  *,html,body
+  *
   {
     margin: 0;
     padding: 0;
@@ -41,7 +41,11 @@
     --bs-body-color: #FFF;
     --bs-body-font-family: "Racing Sans One";
     font-weight: 400;
-   
+  }
+
+  body,.phrase-task,.task-list-item,.button-add-task
+  {
+    transition: 2s!important;
   }
 
   h1
