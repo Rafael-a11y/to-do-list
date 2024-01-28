@@ -1,4 +1,4 @@
-<h1 align = "center">To do lits</h1>
+<h1 align = "center">To do list</h1>
 
 ![To do List](https://github.com/Rafael-a11y/to-do-list/assets/63820646/4bd74b12-9a0a-4a19-b11e-1ae33a93f30d#vitrinedev)
 
