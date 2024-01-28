@@ -1,6 +1,34 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
+  :root
+  {
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+    --cor-fundo-li: black;
+  }
+
+  .mudar-tema
+  {
+    background: var(--label-icon);
+    padding: 67px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .ligth-mode
+  {
+    --bs-body-bg: #FFF;
+    --bs-body-color:#2C2C2C;
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+    --cor-fundo-li: #d3d3d3;
+  }
+
+  #btn
+  {
+    display: none;
+  }
+  
   *,html,body
   {
     margin: 0;
@@ -101,8 +129,8 @@
   .button-add-task
   {
     font-size: 1.5rem;
-    color: #FFF;
-    background-color: #2C2C2C;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
     position: absolute;
     z-index: 1;
     right: 0;
@@ -122,7 +150,7 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 3rem;
-    background-color: black;
+    background-color: var(--cor-fundo-li);
     border-radius: 10px;
     padding: 0.5rem;
     margin-bottom: 2rem;
@@ -161,6 +189,7 @@
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
   width: 3rem;
 }
 

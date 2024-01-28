@@ -2,6 +2,7 @@ const formulario = document.querySelector("#task-form");
 const botaoAddTarefa = document.querySelector(".button-add-task");
 const campoDigitacao = document.querySelector(".input-task");
 const ul = document.querySelector(".task-list");
+const alternarTemaBt = document.querySelector("#btn");
 
 const modalTextArea = document.querySelector(".text-area-edit");
 const salvarAlteracoes = document.querySelector("#save-changes");
@@ -67,10 +68,9 @@ function atualizarTarefas()
 }
 
 formulario.addEventListener("submit", (e) => capturarTarefa(e));
-campoDigitacao.addEventListener("submit", (e) =>
+alternarTemaBt.addEventListener("click", () =>
 {
-
-    if(e.code === "Enter") capturarTarefa(e);
+    document.querySelector("body").classList.toggle("ligth-mode");
 });
 
 console.log(tarefas);
@@ -79,4 +79,5 @@ tarefas.forEach(item => {
     const li = criarLITarefa(item);
     ul.append(li);
 });
+
 
