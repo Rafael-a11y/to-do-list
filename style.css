@@ -5,6 +5,7 @@
   {
     --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
     --cor-fundo-li: black;
+    --cor-botao: rgb(153, 153, 153);
   }
 
   .mudar-tema
@@ -22,8 +23,8 @@
     --bs-body-color:#2C2C2C;
     --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
     --cor-fundo-li: #d3d3d3;
+    --cor-botao: var(--bs-body-bg);
   }
-
   #btn
   {
     display: none;
@@ -41,11 +42,7 @@
     --bs-body-color: #FFF;
     --bs-body-font-family: "Racing Sans One";
     font-weight: 400;
-  }
-
-  body,.phrase-task,.task-list-item,.button-add-task
-  {
-    transition: 2s!important;
+    transition: 2s;
   }
 
   h1
@@ -179,12 +176,12 @@
 }
 .button-edit-task
 {
-  background: url("./assets/edit.png") #FFFFFF80;
+  background: url("./assets/edit.png") var(--cor-botao);
 }
 
 .button-remove-task
 {
-  background: url("./assets/icon\ trash.svg") #FFFFFF80;
+  background: url("./assets/icon\ trash.svg") var(--cor-botao);
 }
 
 .button-remove-task, .button-edit-task
