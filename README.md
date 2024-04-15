@@ -1,6 +1,6 @@
-<h1 align = "center">To do list</h1>
+<h1 align = "center">Lista de tarefas</h1>
 
-![To do List](https://github.com/Rafael-a11y/to-do-list/assets/63820646/4bd74b12-9a0a-4a19-b11e-1ae33a93f30d#vitrinedev)
+![Lista de afazeres](https://github.com/Rafael-a11y/to-do-list/assets/63820646/a0d6650f-4528-41b7-9c9b-1bca2608b259#vitrinedev)
 
 
 <p>Projeto de lista de tarefas que usa armazenamento local. Duarante o desenvolvimento do projeto, tive algumas dificuldades por conta da baixa tipagem do Javascript que apesar de num primeiro momento
@@ -15,10 +15,10 @@ tipos estão sendo processados e em quais momentos exatamente stão sendo proces
   <li><strong>Create: </strong>Criar uma nova tarefa</li>
   <li><strong>Reading: </strong>Leitura das tarefas criadas</li>
   <li><strong>Update: </strong>Atualizar uma tarefa existente</li>
-  <li><strong>Delete</strong>Excluir uma tarefa</li>
+  <li><strong>Delete: </strong>Excluir uma tarefa</li>
+  <li><strong>Funcionalidade 5: </strong>Alternar entre modo claro e escuro</li>
+  <li><strong>Funcionalidade 6: </strong>Fornece dados climáticos e de geolocalização referentes ao usuário</li>
 </ul>
-
-https://github.com/Rafael-a11y/to-do-list/assets/63820646/52bdf02c-72ab-4c66-8e27-b991a443692e
 
 # 📁 Acesso ao projeto
 
