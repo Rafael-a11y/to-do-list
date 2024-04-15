@@ -1,191 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+:root {
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+  --cor-fundo-li: black;
+  --cor-botao: rgb(153, 153, 153);
+}
 
-  :root
+html {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+body {
+  width: 100%;
+  height: 60%;
+  @media screen and (max-width:768px)
   {
-    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
-    --cor-fundo-li: black;
-    --cor-botao: rgb(153, 153, 153);
+    height: 73%;
   }
+}
 
-  .mudar-tema
+.caixa-api {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  align-items: flex-start;
+  @media screen and (max-width: 768PX)
   {
-    background: var(--label-icon);
-    padding: 67px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    column-gap: 0.5rem;
   }
+}
 
-  .ligth-mode
-  {
-    --bs-body-bg: #FFF;
-    --bs-body-color:#2C2C2C;
-    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
-    --cor-fundo-li: #d3d3d3;
-    --cor-botao: var(--bs-body-bg);
+.caixa-api__lista {
+  list-style: none;
+  padding: 0;
+}
+
+.caixa-api__lista>li {
+  margin-bottom: 0.8rem;
+}
+
+#temperatura,
+#data,
+#geolocalizacao {
+  font-size: 1.8rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
   }
-  #btn
+}
+
+#clima-icone {
+  width: 100px;
+  @media screen and (max-width: 768PX)
   {
-    display: none;
+    width: 70px;
   }
-  
-  *
-  {
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  body
-  {
-    --bs-body-bg: #2C2C2C;
-    --bs-body-color: #FFF;
-    --bs-body-font-family: "Racing Sans One";
-    font-weight: 400;
-    transition: 2s;
-  }
+.mudar-tema {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--label-icon);
+  padding: 50px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 
-  h1
-  {
-    color: var(--light, #FFF);
-    font-family: 'Racing Sans One', sans-serif;
-    font-size: 64px!important;
-    font-style: normal;
-    margin-bottom: 0!important;
-    display: inline-block;
-
-  }
-  .cabecalho
-  {
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-bottom: 2px var(--bs-body-color) solid;
-    margin-bottom: 3rem;
-
-    @media screen and (max-width:768px)
-    {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  }
-
-  main
-  {
-    padding: 0 16rem 0 16rem;
-
-    @media screen and (max-width:768px)
-    {
-      padding: 0 8rem 0 8rem;
-    }
-
-    @media screen and (max-width:430px)
-    {
-      padding: 0 1rem 0 1rem;
-      
-    }
-  }
-
-  .section-input
-  {
-    border-bottom: 2px solid var(--bs-body-color);
-    padding: 2rem 0 2rem 0;
-    margin-bottom: 4rem;
-  }
-
-  .new-task,.new-task *
-  {
-    border-radius: 30px;
-  }
-
-  .new-task
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    box-sizing: border-box;
-    height: 3rem;
-    position: relative;
-    border: none;
-  }
-
-  .input-task
-  {
-    flex-grow: 1;
-    font-size: 1.5rem;
-    z-index: 0;
-    background-color: #D9D9D9;
-    text-align: left;
-    padding-left: 2rem;
-  }
-
-  .input-task::placeholder
-  {
-    text-align: left;
-  }
-
-  .button-add-task
-  {
-    font-size: 1.5rem;
-    color: var(--bs-body-color);
-    background-color: var(--bs-body-bg);
-    position: absolute;
+  @media screen and (max-width: 428px) {
+    top: 6rem;
+    right: 2rem;
     z-index: 1;
-    right: 0;
-    padding: 0.5rem;
-    height: 100%;
+    padding: 30px;
+    width: 70px;
+  }
+}
+
+.ligth-mode {
+  --bs-body-bg: #FFF;
+  --bs-body-color: #2C2C2C;
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+  --cor-fundo-li: #d3d3d3;
+  --cor-botao: var(--bs-body-bg);
+}
+
+#btn {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  --bs-body-bg: #2C2C2C;
+  --bs-body-color: #FFF;
+  --bs-body-font-family: "Racing Sans One";
+  font-weight: 400;
+  transition: 2s;
+}
+
+h1 {
+  color: var(--light, #FFF);
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 64px !important;
+  font-style: normal;
+  margin-bottom: 0 !important;
+  display: inline-block;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem !important;
   }
 
-  .task-list
-  {
-    list-style-type: none;
-    padding-left: 0;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  margin: 0 30% 3rem 30%;
+  border-bottom: 2px var(--bs-body-color) solid;
+
+  @media screen and (max-width:768px) {
+    margin: 0 10% 1.5rem 10%;
+    padding-top: 1.5rem;
+  }
+}
+
+main {
+  padding: 0 16rem 0 16rem;
+
+  @media screen and (max-width:768px) {
+    padding: 0 8rem 0 8rem;
   }
 
-  .task-list-item
+  @media screen and (max-width:430px) {
+    padding: 0 1rem 0 1rem;
+
+  }
+}
+
+.section-input {
+  border-bottom: 2px solid var(--bs-body-color);
+  padding: 2rem 0 2rem 0;
+  margin-bottom: 4rem;
+  @media screen and (max-width:768px)
   {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 3rem;
-    background-color: var(--cor-fundo-li);
-    border-radius: 10px;
-    padding: 0.5rem;
+    padding: 1rem 0 1rem 0;
     margin-bottom: 2rem;
-    position: relative;
-    padding-left: 2rem;
   }
+}
 
+.new-task,
+.new-task * {
+  border-radius: 30px;
+}
 
-  .phrase-task
+.new-task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+  height: 3rem;
+  position: relative;
+  border: none;
+}
+
+.input-task {
+  flex-grow: 1;
+  font-size: 1.5rem;
+  z-index: 0;
+  background-color: #D9D9D9;
+  text-align: left;
+  padding-left: 2rem;
+
+  @media screen and (max-width:768px) {
+    font-size: 12px;
+  }
+}
+
+.input-task::placeholder {
+  text-align: left;
+}
+
+.button-add-task {
+  font-size: 1.5rem;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  padding: 0.5rem;
+  height: 100%;
+
+  @media screen and (max-width:768px) {
+    font-size: 12px;
+  }
+}
+
+.task-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.task-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 3rem;
+  background-color: var(--cor-fundo-li);
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 2rem;
+  @media screen and (max-width:728px)
   {
-    margin: 0;
-    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
   }
+}
 
-.buttons-task
-{
+
+.phrase-task {
+  margin: 0;
+  font-size: 1.5rem;
+  @media screen and (max-width:728px)
+  {
+    font-size: 12px;
+  }
+}
+
+.buttons-task {
   position: absolute;
   right: 0;
   z-index: 1;
   display: inline-block;
   height: 100%;
 }
-.button-edit-task
-{
+
+.button-edit-task {
   background: url("./assets/edit.png") var(--cor-botao);
 }
 
-.button-remove-task
-{
+.button-remove-task {
   background: url("./assets/icon\ trash.svg") var(--cor-botao);
 }
 
-.button-remove-task, .button-edit-task
-{
+.button-remove-task,
+.button-edit-task {
   border-radius: 10px;
   height: 100%;
   background-repeat: no-repeat;
@@ -194,8 +270,11 @@
   width: 3rem;
 }
 
-.text-area-edit
-{
+.text-area-edit {
   width: 100%;
 }
 
+.hidden
+{
+  display: none;
+}
