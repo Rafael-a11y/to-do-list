@@ -64,7 +64,7 @@ async function obterClima(callback, callbackDeVisualizacao) {
         await obterGeoCodificacao(obterIp, mostrarLocalizacao);
         await callback();
         // const url = `https://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civillight&output=json&lang=pt`
-        const url = `http://api.weatherapi.com/v1/current.json?key=8ff4424796364292835220704241304&q=${cidade}&aqi=no
+        const url = `https://api.weatherapi.com/v1/current.json?key=8ff4424796364292835220704241304&q=${cidade}&aqi=no
         `;
         console.log(cidade)
         const busca = await fetch(url);
