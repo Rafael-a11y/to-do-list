@@ -6,7 +6,6 @@ const alternarTemaBt = document.querySelector("#btn");
 
 const modalTextArea = document.querySelector(".text-area-edit");
 const salvarAlteracoes = document.querySelector("#save-changes");
-console.log(salvarAlteracoes.textContent)
 let tarefas = JSON.parse(localStorage.getItem("token")) || [];
 
 const capturarTarefa = (evento) =>
@@ -72,8 +71,6 @@ alternarTemaBt.addEventListener("click", () =>
 {
     document.querySelector("body").classList.toggle("ligth-mode");
 });
-
-console.log(tarefas);
 
 tarefas.forEach(item => {
     const li = criarLITarefa(item);
